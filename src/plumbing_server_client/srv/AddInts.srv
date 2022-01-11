@@ -1,0 +1,5 @@
+#客户端请求时发送的数据
+int32 num1
+int32 num2
+---
+int32 sum

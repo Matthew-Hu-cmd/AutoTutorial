@@ -1,0 +1,8 @@
+prefix=/home/hy/AutoTutorial/install
+
+Name: plumbing_head_src
+Description: Description of plumbing_head_src
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

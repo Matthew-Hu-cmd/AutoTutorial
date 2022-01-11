@@ -1,0 +1,8 @@
+prefix=/home/hy/AutoTutorial/devel
+
+Name: launch01_basic
+Description: Description of launch01_basic
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

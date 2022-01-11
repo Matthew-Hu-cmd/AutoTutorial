@@ -1,0 +1,16 @@
+<launch>
+    <!-- 你甚至不需要自己启动roscore -->
+    <!-- 启动乌龟仿真节点 -->
+    <!-- respawn= "true" 节点关闭后自动重启-->
+    <!-- required= "true" 节点退出后，关闭整个系统-->
+    <!-- ns="hello" 设置节点的命名空间 -->
+
+    <!-- 加了子参数的节点就不要在第一行的后面加上/来结束了-->
+    
+    <node pkg="turtlesim" type="turtlesim_node" name="my_turtle" output="screen" respawn= "true"/>  
+        <!-- <remap from="/turtle1/cmd_vel" to="/cmd_vel" />
+    </node> -->
+    <!-- 启动乌龟键盘控制节点 -->
+    <node pkg="turtlesim" type="turtle_teleop_key" name="my_key" output="screen" />
+
+</launch>
