@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 
     //     5.广播器发布坐标系信息
     broadcaster.sendTransform(tfs);
+    //6.spin()
     ros::spin();
-    //     6.spin()
     return 0;
 }
