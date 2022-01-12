@@ -138,6 +138,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/hy/AutoTutorial/build/plumbing_pub_sub/cmake_install.cmake")
   include("/home/hy/AutoTutorial/build/plumbing_server_client/cmake_install.cmake")
   include("/home/hy/AutoTutorial/build/plumbing_test/cmake_install.cmake")
+  include("/home/hy/AutoTutorial/build/tf01_static/cmake_install.cmake")
   include("/home/hy/AutoTutorial/build/launch01_basic/cmake_install.cmake")
 
 endif()
