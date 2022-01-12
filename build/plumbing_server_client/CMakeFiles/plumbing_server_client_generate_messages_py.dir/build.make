@@ -53,21 +53,29 @@ CMAKE_BINARY_DIR = /home/hy/AutoTutorial/build
 # Include the progress variables for this target.
 include plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/progress.make
 
+plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py: /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/_Serial.py
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py: /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/_AddInts.py
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py: /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/__init__.py
 
 
+/home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/_Serial.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/_Serial.py: /home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV plumbing_server_client/Serial"
+	cd /home/hy/AutoTutorial/build/plumbing_server_client && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p plumbing_server_client -o /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv
+
 /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/_AddInts.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
 /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/_AddInts.py: /home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV plumbing_server_client/AddInts"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV plumbing_server_client/AddInts"
 	cd /home/hy/AutoTutorial/build/plumbing_server_client && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p plumbing_server_client -o /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv
 
 /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/__init__.py: /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/_Serial.py
 /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/__init__.py: /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/_AddInts.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for plumbing_server_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for plumbing_server_client"
 	cd /home/hy/AutoTutorial/build/plumbing_server_client && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv --initpy
 
 plumbing_server_client_generate_messages_py: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py
+plumbing_server_client_generate_messages_py: /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/_Serial.py
 plumbing_server_client_generate_messages_py: /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/_AddInts.py
 plumbing_server_client_generate_messages_py: /home/hy/AutoTutorial/devel/lib/python2.7/dist-packages/plumbing_server_client/srv/__init__.py
 plumbing_server_client_generate_messages_py: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/build.make

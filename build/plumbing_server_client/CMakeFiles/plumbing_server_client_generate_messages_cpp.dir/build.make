@@ -53,17 +53,26 @@ CMAKE_BINARY_DIR = /home/hy/AutoTutorial/build
 # Include the progress variables for this target.
 include plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/progress.make
 
+plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp: /home/hy/AutoTutorial/devel/include/plumbing_server_client/Serial.h
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp: /home/hy/AutoTutorial/devel/include/plumbing_server_client/AddInts.h
 
+
+/home/hy/AutoTutorial/devel/include/plumbing_server_client/Serial.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/hy/AutoTutorial/devel/include/plumbing_server_client/Serial.h: /home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv
+/home/hy/AutoTutorial/devel/include/plumbing_server_client/Serial.h: /opt/ros/melodic/share/gencpp/msg.h.template
+/home/hy/AutoTutorial/devel/include/plumbing_server_client/Serial.h: /opt/ros/melodic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from plumbing_server_client/Serial.srv"
+	cd /home/hy/AutoTutorial/src/plumbing_server_client && /home/hy/AutoTutorial/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p plumbing_server_client -o /home/hy/AutoTutorial/devel/include/plumbing_server_client -e /opt/ros/melodic/share/gencpp/cmake/..
 
 /home/hy/AutoTutorial/devel/include/plumbing_server_client/AddInts.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/hy/AutoTutorial/devel/include/plumbing_server_client/AddInts.h: /home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv
 /home/hy/AutoTutorial/devel/include/plumbing_server_client/AddInts.h: /opt/ros/melodic/share/gencpp/msg.h.template
 /home/hy/AutoTutorial/devel/include/plumbing_server_client/AddInts.h: /opt/ros/melodic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from plumbing_server_client/AddInts.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from plumbing_server_client/AddInts.srv"
 	cd /home/hy/AutoTutorial/src/plumbing_server_client && /home/hy/AutoTutorial/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p plumbing_server_client -o /home/hy/AutoTutorial/devel/include/plumbing_server_client -e /opt/ros/melodic/share/gencpp/cmake/..
 
 plumbing_server_client_generate_messages_cpp: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp
+plumbing_server_client_generate_messages_cpp: /home/hy/AutoTutorial/devel/include/plumbing_server_client/Serial.h
 plumbing_server_client_generate_messages_cpp: /home/hy/AutoTutorial/devel/include/plumbing_server_client/AddInts.h
 plumbing_server_client_generate_messages_cpp: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build.make
 

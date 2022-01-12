@@ -46,7 +46,7 @@ int main(int argc, char  *argv[])
     //数据(动态组织)
     std_msgs::String msg;
     // msg.data = "你好啊！！！";
-    std::string msg_front = "Hello 你好！"; //消息前缀
+    std::string msg_front = ""; //消息前缀
     int count = 0; //消息计数器
 
     //逻辑(一秒10次)

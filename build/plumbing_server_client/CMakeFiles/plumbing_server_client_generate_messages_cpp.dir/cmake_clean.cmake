@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/plumbing_server_client_generate_messages_cpp"
+  "/home/hy/AutoTutorial/devel/include/plumbing_server_client/Serial.h"
   "/home/hy/AutoTutorial/devel/include/plumbing_server_client/AddInts.h"
 )
 

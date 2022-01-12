@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/plumbing_server_client_generate_messages_nodejs"
+  "/home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv/Serial.js"
   "/home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv/AddInts.js"
 )
 

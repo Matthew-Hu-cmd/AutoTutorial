@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv"
+services_str = "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv;/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv"
 pkg_name = "plumbing_server_client"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

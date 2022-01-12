@@ -53,20 +53,27 @@ CMAKE_BINARY_DIR = /home/hy/AutoTutorial/build
 # Include the progress variables for this target.
 include plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/progress.make
 
+plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus: /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/srv/Serial.l
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus: /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/srv/AddInts.l
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus: /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/manifest.l
 
 
+/home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/srv/Serial.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/srv/Serial.l: /home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from plumbing_server_client/Serial.srv"
+	cd /home/hy/AutoTutorial/build/plumbing_server_client && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p plumbing_server_client -o /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/srv
+
 /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/srv/AddInts.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/srv/AddInts.l: /home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from plumbing_server_client/AddInts.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from plumbing_server_client/AddInts.srv"
 	cd /home/hy/AutoTutorial/build/plumbing_server_client && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p plumbing_server_client -o /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/srv
 
 /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for plumbing_server_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for plumbing_server_client"
 	cd /home/hy/AutoTutorial/build/plumbing_server_client && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client plumbing_server_client std_msgs
 
 plumbing_server_client_generate_messages_eus: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus
+plumbing_server_client_generate_messages_eus: /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/srv/Serial.l
 plumbing_server_client_generate_messages_eus: /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/srv/AddInts.l
 plumbing_server_client_generate_messages_eus: /home/hy/AutoTutorial/devel/share/roseus/ros/plumbing_server_client/manifest.l
 plumbing_server_client_generate_messages_eus: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/build.make

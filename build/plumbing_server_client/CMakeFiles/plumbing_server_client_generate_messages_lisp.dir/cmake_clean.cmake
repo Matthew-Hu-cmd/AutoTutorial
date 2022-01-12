@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/plumbing_server_client_generate_messages_lisp"
+  "/home/hy/AutoTutorial/devel/share/common-lisp/ros/plumbing_server_client/srv/Serial.lisp"
   "/home/hy/AutoTutorial/devel/share/common-lisp/ros/plumbing_server_client/srv/AddInts.lisp"
 )
 

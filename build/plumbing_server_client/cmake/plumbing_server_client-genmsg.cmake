@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "plumbing_server_client: 0 messages, 1 services")
+message(STATUS "plumbing_server_client: 0 messages, 2 services")
 
 set(MSG_I_FLAGS "-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
@@ -17,6 +17,11 @@ add_custom_target(plumbing_server_client_generate_messages ALL)
 
 
 
+get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv" NAME_WE)
+add_custom_target(_plumbing_server_client_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "plumbing_server_client" "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv" ""
+)
+
 get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv" NAME_WE)
 add_custom_target(_plumbing_server_client_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "plumbing_server_client" "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv" ""
@@ -30,6 +35,12 @@ add_custom_target(_plumbing_server_client_generate_messages_check_deps_${_filena
 ### Generating Messages
 
 ### Generating Services
+_generate_srv_cpp(plumbing_server_client
+  "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/plumbing_server_client
+)
 _generate_srv_cpp(plumbing_server_client
   "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv"
   "${MSG_I_FLAGS}"
@@ -49,6 +60,8 @@ add_custom_target(plumbing_server_client_generate_messages_cpp
 add_dependencies(plumbing_server_client_generate_messages plumbing_server_client_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv" NAME_WE)
+add_dependencies(plumbing_server_client_generate_messages_cpp _plumbing_server_client_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv" NAME_WE)
 add_dependencies(plumbing_server_client_generate_messages_cpp _plumbing_server_client_generate_messages_check_deps_${_filename})
 
@@ -63,6 +76,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS plumbing_server_client_generate_mes
 ### Generating Messages
 
 ### Generating Services
+_generate_srv_eus(plumbing_server_client
+  "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/plumbing_server_client
+)
 _generate_srv_eus(plumbing_server_client
   "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv"
   "${MSG_I_FLAGS}"
@@ -82,6 +101,8 @@ add_custom_target(plumbing_server_client_generate_messages_eus
 add_dependencies(plumbing_server_client_generate_messages plumbing_server_client_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv" NAME_WE)
+add_dependencies(plumbing_server_client_generate_messages_eus _plumbing_server_client_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv" NAME_WE)
 add_dependencies(plumbing_server_client_generate_messages_eus _plumbing_server_client_generate_messages_check_deps_${_filename})
 
@@ -96,6 +117,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS plumbing_server_client_generate_mes
 ### Generating Messages
 
 ### Generating Services
+_generate_srv_lisp(plumbing_server_client
+  "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/plumbing_server_client
+)
 _generate_srv_lisp(plumbing_server_client
   "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv"
   "${MSG_I_FLAGS}"
@@ -115,6 +142,8 @@ add_custom_target(plumbing_server_client_generate_messages_lisp
 add_dependencies(plumbing_server_client_generate_messages plumbing_server_client_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv" NAME_WE)
+add_dependencies(plumbing_server_client_generate_messages_lisp _plumbing_server_client_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv" NAME_WE)
 add_dependencies(plumbing_server_client_generate_messages_lisp _plumbing_server_client_generate_messages_check_deps_${_filename})
 
@@ -129,6 +158,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS plumbing_server_client_generate_mes
 ### Generating Messages
 
 ### Generating Services
+_generate_srv_nodejs(plumbing_server_client
+  "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/plumbing_server_client
+)
 _generate_srv_nodejs(plumbing_server_client
   "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv"
   "${MSG_I_FLAGS}"
@@ -148,6 +183,8 @@ add_custom_target(plumbing_server_client_generate_messages_nodejs
 add_dependencies(plumbing_server_client_generate_messages plumbing_server_client_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv" NAME_WE)
+add_dependencies(plumbing_server_client_generate_messages_nodejs _plumbing_server_client_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv" NAME_WE)
 add_dependencies(plumbing_server_client_generate_messages_nodejs _plumbing_server_client_generate_messages_check_deps_${_filename})
 
@@ -162,6 +199,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS plumbing_server_client_generate_mes
 ### Generating Messages
 
 ### Generating Services
+_generate_srv_py(plumbing_server_client
+  "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/plumbing_server_client
+)
 _generate_srv_py(plumbing_server_client
   "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv"
   "${MSG_I_FLAGS}"
@@ -181,6 +224,8 @@ add_custom_target(plumbing_server_client_generate_messages_py
 add_dependencies(plumbing_server_client_generate_messages plumbing_server_client_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv" NAME_WE)
+add_dependencies(plumbing_server_client_generate_messages_py _plumbing_server_client_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv" NAME_WE)
 add_dependencies(plumbing_server_client_generate_messages_py _plumbing_server_client_generate_messages_check_deps_${_filename})
 

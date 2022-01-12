@@ -53,15 +53,22 @@ CMAKE_BINARY_DIR = /home/hy/AutoTutorial/build
 # Include the progress variables for this target.
 include plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/progress.make
 
+plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs: /home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv/Serial.js
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs: /home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv/AddInts.js
 
 
+/home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv/Serial.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv/Serial.js: /home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from plumbing_server_client/Serial.srv"
+	cd /home/hy/AutoTutorial/build/plumbing_server_client && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p plumbing_server_client -o /home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv
+
 /home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv/AddInts.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv/AddInts.js: /home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from plumbing_server_client/AddInts.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hy/AutoTutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from plumbing_server_client/AddInts.srv"
 	cd /home/hy/AutoTutorial/build/plumbing_server_client && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p plumbing_server_client -o /home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv
 
 plumbing_server_client_generate_messages_nodejs: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs
+plumbing_server_client_generate_messages_nodejs: /home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv/Serial.js
 plumbing_server_client_generate_messages_nodejs: /home/hy/AutoTutorial/devel/share/gennodejs/ros/plumbing_server_client/srv/AddInts.js
 plumbing_server_client_generate_messages_nodejs: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_nodejs.dir/build.make
 

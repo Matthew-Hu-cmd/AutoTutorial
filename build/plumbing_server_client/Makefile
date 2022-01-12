@@ -80,29 +80,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -134,6 +111,29 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,19 +168,49 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/rule:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/rule
-.PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/rule
+plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/rule:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/rule
+.PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-plumbing_server_client_geneus: plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/rule
+plumbing_server_client_generate_messages_cpp: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/rule
 
-.PHONY : plumbing_server_client_geneus
+.PHONY : plumbing_server_client_generate_messages_cpp
 
 # fast build rule for target.
-plumbing_server_client_geneus/fast:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/build
-.PHONY : plumbing_server_client_geneus/fast
+plumbing_server_client_generate_messages_cpp/fast:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build
+.PHONY : plumbing_server_client_generate_messages_cpp/fast
+
+# Convenience name for target.
+plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/rule:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/rule
+.PHONY : plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/rule
+
+# Convenience name for target.
+_plumbing_server_client_generate_messages_check_deps_AddInts: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/rule
+
+.PHONY : _plumbing_server_client_generate_messages_check_deps_AddInts
+
+# fast build rule for target.
+_plumbing_server_client_generate_messages_check_deps_AddInts/fast:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/build.make plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/build
+.PHONY : _plumbing_server_client_generate_messages_check_deps_AddInts/fast
+
+# Convenience name for target.
+plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/rule:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/rule
+.PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/rule
+
+# Convenience name for target.
+plumbing_server_client_gennodejs: plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/rule
+
+.PHONY : plumbing_server_client_gennodejs
+
+# fast build rule for target.
+plumbing_server_client_gennodejs/fast:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/build
+.PHONY : plumbing_server_client_gennodejs/fast
 
 # Convenience name for target.
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_eus.dir/rule:
@@ -228,49 +258,64 @@ plumbing_server_client_generate_messages/fast:
 .PHONY : plumbing_server_client_generate_messages/fast
 
 # Convenience name for target.
-plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/rule:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/rule
-.PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/rule
+plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Serial.dir/rule:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Serial.dir/rule
+.PHONY : plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Serial.dir/rule
 
 # Convenience name for target.
-plumbing_server_client_generate_messages_cpp: plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/rule
+_plumbing_server_client_generate_messages_check_deps_Serial: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Serial.dir/rule
 
-.PHONY : plumbing_server_client_generate_messages_cpp
+.PHONY : _plumbing_server_client_generate_messages_check_deps_Serial
 
 # fast build rule for target.
-plumbing_server_client_generate_messages_cpp/fast:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_cpp.dir/build
-.PHONY : plumbing_server_client_generate_messages_cpp/fast
+_plumbing_server_client_generate_messages_check_deps_Serial/fast:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Serial.dir/build.make plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_Serial.dir/build
+.PHONY : _plumbing_server_client_generate_messages_check_deps_Serial/fast
 
 # Convenience name for target.
-plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/rule:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/rule
-.PHONY : plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/rule
+plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule
+.PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule
 
 # Convenience name for target.
-_plumbing_server_client_generate_messages_check_deps_AddInts: plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/rule
+plumbing_server_client_genpy: plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule
 
-.PHONY : _plumbing_server_client_generate_messages_check_deps_AddInts
+.PHONY : plumbing_server_client_genpy
 
 # fast build rule for target.
-_plumbing_server_client_generate_messages_check_deps_AddInts/fast:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/build.make plumbing_server_client/CMakeFiles/_plumbing_server_client_generate_messages_check_deps_AddInts.dir/build
-.PHONY : _plumbing_server_client_generate_messages_check_deps_AddInts/fast
+plumbing_server_client_genpy/fast:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/build
+.PHONY : plumbing_server_client_genpy/fast
 
 # Convenience name for target.
-plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/rule:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/rule
-.PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/rule
+plumbing_server_client/CMakeFiles/demo01_server.dir/rule:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/demo01_server.dir/rule
+.PHONY : plumbing_server_client/CMakeFiles/demo01_server.dir/rule
 
 # Convenience name for target.
-plumbing_server_client_gennodejs: plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/rule
+demo01_server: plumbing_server_client/CMakeFiles/demo01_server.dir/rule
 
-.PHONY : plumbing_server_client_gennodejs
+.PHONY : demo01_server
 
 # fast build rule for target.
-plumbing_server_client_gennodejs/fast:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_gennodejs.dir/build
-.PHONY : plumbing_server_client_gennodejs/fast
+demo01_server/fast:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/demo01_server.dir/build.make plumbing_server_client/CMakeFiles/demo01_server.dir/build
+.PHONY : demo01_server/fast
+
+# Convenience name for target.
+plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/rule:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/rule
+.PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/rule
+
+# Convenience name for target.
+plumbing_server_client_geneus: plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/rule
+
+.PHONY : plumbing_server_client_geneus
+
+# fast build rule for target.
+plumbing_server_client_geneus/fast:
+	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_geneus.dir/build
+.PHONY : plumbing_server_client_geneus/fast
 
 # Convenience name for target.
 plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_lisp.dir/rule:
@@ -347,36 +392,6 @@ plumbing_server_client_generate_messages_py/fast:
 	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_generate_messages_py.dir/build
 .PHONY : plumbing_server_client_generate_messages_py/fast
 
-# Convenience name for target.
-plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule
-.PHONY : plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule
-
-# Convenience name for target.
-plumbing_server_client_genpy: plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/rule
-
-.PHONY : plumbing_server_client_genpy
-
-# fast build rule for target.
-plumbing_server_client_genpy/fast:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/build.make plumbing_server_client/CMakeFiles/plumbing_server_client_genpy.dir/build
-.PHONY : plumbing_server_client_genpy/fast
-
-# Convenience name for target.
-plumbing_server_client/CMakeFiles/demo01_server.dir/rule:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f CMakeFiles/Makefile2 plumbing_server_client/CMakeFiles/demo01_server.dir/rule
-.PHONY : plumbing_server_client/CMakeFiles/demo01_server.dir/rule
-
-# Convenience name for target.
-demo01_server: plumbing_server_client/CMakeFiles/demo01_server.dir/rule
-
-.PHONY : demo01_server
-
-# fast build rule for target.
-demo01_server/fast:
-	cd /home/hy/AutoTutorial/build && $(MAKE) -f plumbing_server_client/CMakeFiles/demo01_server.dir/build.make plumbing_server_client/CMakeFiles/demo01_server.dir/build
-.PHONY : demo01_server/fast
-
 src/demo01_server.o: src/demo01_server.cpp.o
 
 .PHONY : src/demo01_server.o
@@ -439,13 +454,19 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... plumbing_server_client_geneus"
-	@echo "... plumbing_server_client_generate_messages_eus"
-	@echo "... plumbing_server_client_gencpp"
-	@echo "... plumbing_server_client_generate_messages"
 	@echo "... plumbing_server_client_generate_messages_cpp"
 	@echo "... _plumbing_server_client_generate_messages_check_deps_AddInts"
 	@echo "... plumbing_server_client_gennodejs"
+	@echo "... plumbing_server_client_generate_messages_eus"
+	@echo "... plumbing_server_client_gencpp"
+	@echo "... plumbing_server_client_generate_messages"
+	@echo "... _plumbing_server_client_generate_messages_check_deps_Serial"
+	@echo "... list_install_components"
+	@echo "... plumbing_server_client_genpy"
+	@echo "... rebuild_cache"
+	@echo "... demo01_server"
+	@echo "... test"
+	@echo "... plumbing_server_client_geneus"
 	@echo "... install"
 	@echo "... plumbing_server_client_generate_messages_lisp"
 	@echo "... demo02_client"
@@ -453,11 +474,6 @@ help:
 	@echo "... plumbing_server_client_generate_messages_nodejs"
 	@echo "... edit_cache"
 	@echo "... plumbing_server_client_generate_messages_py"
-	@echo "... list_install_components"
-	@echo "... plumbing_server_client_genpy"
-	@echo "... rebuild_cache"
-	@echo "... demo01_server"
-	@echo "... test"
 	@echo "... src/demo01_server.o"
 	@echo "... src/demo01_server.i"
 	@echo "... src/demo01_server.s"

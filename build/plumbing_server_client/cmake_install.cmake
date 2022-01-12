@@ -38,7 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/plumbing_server_client/srv" TYPE FILE FILES "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/plumbing_server_client/srv" TYPE FILE FILES
+    "/home/hy/AutoTutorial/src/plumbing_server_client/srv/AddInts.srv"
+    "/home/hy/AutoTutorial/src/plumbing_server_client/srv/Serial.srv"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -86,5 +89,9 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/plumbing_server_client" TYPE FILE FILES "/home/hy/AutoTutorial/src/plumbing_server_client/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/plumbing_server_client" TYPE PROGRAM FILES "/home/hy/AutoTutorial/build/plumbing_server_client/catkin_generated/installspace/server_serial.py")
 endif()
 
