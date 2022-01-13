@@ -1,0 +1,8 @@
+prefix=/home/hy/AutoTutorial/install
+
+Name: tf04_test
+Description: Description of tf04_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

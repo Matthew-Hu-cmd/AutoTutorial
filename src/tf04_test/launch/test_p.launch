@@ -1,0 +1,21 @@
+<launch>
+    <!-- 
+        流程讲解：
+            1.准备工作：启动乌龟的GUI节点与键盘控制节点；
+            2.需要调用服务生成一只新的乌龟
+            3.发布两只乌龟的坐标信息
+            4.订阅坐标信息，并且转换成 乌龟A 相对于 乌龟B的坐标信息，最后生成控制乌龟B的速度控制信息
+     -->
+     <!-- 1.准备工作：启动乌龟的GUI节点与键盘控制节点-->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1" output="screen" />
+    <node pkg="turtlesim" type="turtle_teleop_key" name="key_control" output="screen"/>
+
+    <!-- 2.需要调用服务生成一只新的乌龟 -->
+    <node pkg = "tf04_test" type = "test01_new_turtle_p.py" name = "turtle2" output= "screen"/>
+    <!-- 发布两只乌龟的坐标信息：
+            1.复用之前的乌龟坐标发布功能；
+            2.调用节点时，以参数的方式传递乌龟名称，解析参数置换 ：订阅的话题消息 和 子级坐标系的名称
+     -->
+     <node pkg="tf04_test" type="test02_pub_turtle_p.py" name="pub1" args="turtle1" output="screen" />
+     <node pkg="tf04_test" type="test02_pub_turtle_p.py" name="pub2" args="turtle2" output="screen"/>
+</launch>
