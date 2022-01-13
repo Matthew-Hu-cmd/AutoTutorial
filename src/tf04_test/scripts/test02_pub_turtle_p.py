@@ -1,6 +1,6 @@
 #! /usr/bin/env python2.7
-#把python改成python2.7可以解决一些与tf有关的问题
 # -*- coding: utf-8 -*-
+#把python改成python2.7可以解决一些与tf有关的问题
 # 解决中文字符编码的问题
 """  
     该文件实现:需要订阅 turtle1 和 turtle2 的 pose，然后广播相对 world 的坐标系信息
@@ -74,4 +74,3 @@ if __name__ == "__main__":
     #     6.spin
     rospy.spin()
 
-    

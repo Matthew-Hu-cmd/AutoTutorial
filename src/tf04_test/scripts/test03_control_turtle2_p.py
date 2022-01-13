@@ -1,4 +1,5 @@
-#! /usr/bin/env python
+#! /usr/bin/env python2.7
+# -*- coding: utf-8 -*-
 """  
     订阅 turtle1 和 turtle2 的 TF 广播信息，查找并转换时间最近的 TF 信息
     将 turtle1 转换成相对 turtle2 的坐标，在计算线速度和角速度并发布
@@ -42,6 +43,7 @@ if __name__ == "__main__":
             twist = Twist()
             # 间距 = x^2 + y^2  然后开方
             twist.linear.x = 0.5 * math.sqrt(math.pow(trans.transform.translation.x,2) + math.pow(trans.transform.translation.y,2))
+            #直接就是 写一个夹角 = 系数*夹角；夹角就是只要知道一个对边和临边，用反正切就能算出
             twist.angular.z = 4 * math.atan2(trans.transform.translation.y, trans.transform.translation.x)
 
             pub.publish(twist)
