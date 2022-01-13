@@ -12,10 +12,12 @@
 
     <!-- 2.需要调用服务生成一只新的乌龟 -->
     <node pkg = "tf04_test" type = "test01_new_turtle_p.py" name = "turtle2" output= "screen"/>
-    <!-- 发布两只乌龟的坐标信息：
+    <!-- 3.发布两只乌龟的坐标信息：
             1.复用之前的乌龟坐标发布功能；
             2.调用节点时，以参数的方式传递乌龟名称，解析参数置换 ：订阅的话题消息 和 子级坐标系的名称
      -->
      <node pkg="tf04_test" type="test02_pub_turtle_p.py" name="pub1" args="turtle1" output="screen" />
      <node pkg="tf04_test" type="test02_pub_turtle_p.py" name="pub2" args="turtle2" output="screen"/>
+     <!-- 4.订阅坐标信息，并且转换成 乌龟A 与 乌龟B 的坐标信息，最后在生成控制乌龟B的速度信息 -->
+     <node pkg="tf04_test" type="test03_control_turtle2_p.py" name="contrl_node" args="turtle2" output="screen"/>
 </launch>
