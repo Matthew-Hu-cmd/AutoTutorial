@@ -143,6 +143,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/hy/AutoTutorial/build/tf02_dynamic/cmake_install.cmake")
   include("/home/hy/AutoTutorial/build/tf03_tfs/cmake_install.cmake")
   include("/home/hy/AutoTutorial/build/tf04_test/cmake_install.cmake")
+  include("/home/hy/AutoTutorial/build/urdf01_rviz/cmake_install.cmake")
 
 endif()
 

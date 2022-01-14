@@ -191,3 +191,11 @@
 /home/hy/AutoTutorial/build/tf04_test/CMakeFiles/install/local.dir
 /home/hy/AutoTutorial/build/tf04_test/CMakeFiles/rebuild_cache.dir
 /home/hy/AutoTutorial/build/tf04_test/CMakeFiles/install.dir
+/home/hy/AutoTutorial/build/urdf01_rviz/CMakeFiles/install/strip.dir
+/home/hy/AutoTutorial/build/urdf01_rviz/CMakeFiles/install/local.dir
+/home/hy/AutoTutorial/build/urdf01_rviz/CMakeFiles/test.dir
+/home/hy/AutoTutorial/build/urdf01_rviz/CMakeFiles/list_install_components.dir
+/home/hy/AutoTutorial/build/urdf01_rviz/CMakeFiles/urdf01_rviz_xacro_generated_to_devel_space_.dir
+/home/hy/AutoTutorial/build/urdf01_rviz/CMakeFiles/edit_cache.dir
+/home/hy/AutoTutorial/build/urdf01_rviz/CMakeFiles/rebuild_cache.dir
+/home/hy/AutoTutorial/build/urdf01_rviz/CMakeFiles/install.dir

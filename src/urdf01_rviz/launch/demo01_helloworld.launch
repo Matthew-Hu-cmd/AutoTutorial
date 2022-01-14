@@ -1,0 +1,7 @@
+<launch>
+    <!-- 1.在参数服务器载入 urdf 文件 -->
+    <param name="robot_description" textfile="$(find urdf01_rviz)/urdf/urdf/demo01_helloworld.urdf"/>
+    <!-- 2.启动rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find urdf01_rviz)/config/show_my_box.rviz"/>
+    <!-- 对rviz的启动进行优化,添加args.....里面的内容是在rviz中保存的文件,文件保存到了本功能包的config文件夹中 -->
+</launch>
