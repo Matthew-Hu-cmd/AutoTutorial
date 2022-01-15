@@ -1,0 +1,9 @@
+<!-- 组合小车底盘与摄像头与雷达 -->
+<robot name="my_car_camera" xmlns:xacro="http://wiki.ros.org/xacro">
+    <!-- 包含惯性矩阵文件 -->
+    <xacro:include filename="inertial_matrix.xacro"/>
+    <!-- 包含底盘摄像头和雷达的xacro文件 -->
+    <xacro:include filename="car_base.urdf.xacro" />
+    <xacro:include filename="car_camera.urdf.xacro" />
+    <xacro:include filename="car_laser.urdf.xacro" />
+</robot>
