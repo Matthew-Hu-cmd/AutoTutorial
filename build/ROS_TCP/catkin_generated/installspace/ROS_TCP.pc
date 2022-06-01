@@ -1,0 +1,8 @@
+prefix=/home/hy/AutoTutorial/install
+
+Name: ROS_TCP
+Description: Description of ROS_TCP
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

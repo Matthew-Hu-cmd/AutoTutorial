@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="dynamic_demo" pkg="dynamic_demo" type="dynamic_demo">
+  <param name="Vcmd" type="double" value="0.7" />
+  <param name="base_speed" type="double" value="0.7" />
+  <param name="angle_gain" type="double" value="-1.8" />
+</node>
+\endverbatim
+
